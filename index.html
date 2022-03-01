@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body id = "body">
+        <div class = "row menu">
+            <div class = "col-10">
+                <button onclick = "setPage(0)" id = "manualButton">Manual</button>
+            </div>
+            <div class = "col-10">
+                <button onclick = "setPage(1)" id = "mixerButton">Mixer</button>
+            </div>
+            <div class = "col-10">
+                <button onclick = "setPage(2)" id = "materialButton">Material</button>
+            </div>
+            <div class = "col-10">
+                <button onclick = "setPage(3)" id = "manageButton">Manage</button>
+            </div>
+            <div class = "col-10">
+                <button onclick = "setPage(4)" id = "marketButton">Market</button>
+            </div>
+            <div class = "col-30">
+                <button onclick = "showPlans()">MPlans</button>
+            </div>
+            <div class = "col-20 box" id = "moneyBox">
+            </div>
+        </div>
+        <div class = "page" id = "manual">
+            <p>This is the hand clicking page</p>
+            <div class = "row" id = "demo">
+            </div>
+        </div>
+        <div class = "page" id = "mixer">
+            <table class = "col-20" id = "supply">
+            </table>
+        </div>
+        <div class = "page" id = "material">
+            <table class = "col-100" id = "store">
+            </table>
+        </div>
+        <div class = "page" id = "manage">
+            <p>This is a management page. Upgrades bought here.</p>
+        </div>
+        <div class = "page" id = "market">
+            <p>This is the market. See sell stuff here and quests.</p>
+        </div>
+        <div id = "modalBox" class = "modal">
+            <div class = "modal-content">
+                <div class = "modal-head">
+                    <span class = "close"></span>
+                    <div id = "modalTitle"></div>
+                </div>
+                <div class = "modal-body" id = "modal">
+                </div>
+            </div>
+        </div>
+    </body>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+        <link rel = "stylesheet" type = "text/css" href = "format.css" />
+        <link rel = "stylesheet" type = "text/css" href = "columns.css" />
+        <link rel = "stylesheet" type = "text/css" href = "modal.css" />
+
+        <script src = "internal/constants.js" type = "text/javascript"></script>
+        <script src = "basics.js" type = "text/javascript"></script>
+
+        <script src = "paints.js" type = "text/javascript"></script>
+        <script src = "vat.js" type = "text/javascript"></script>
+        <script src = "modal.js" type = "text/javascript"></script>
+        <script src = "internal/help.js" type = "text/javascript"></script>
+        <script src = "pages.js" type = "text/javascript"></script>
+        <script src = "main.js" type = "text/javascript"></script>
+        
+        <script src = "start.js" type = "text/javascript"></script>
+        <title>Paint Bot</title>
+    </head>
+</html>
